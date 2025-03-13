@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" thread-count="1" parallel="tests" verbose="4">
+
+	<test name="Amazon Test">
+		<parameter name="url" value="https://www.amazon.com" />
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="testcases.AmazonTest" />
+		</classes>
+	</test>
+
+</suite>
